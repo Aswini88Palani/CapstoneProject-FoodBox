@@ -1,0 +1,13 @@
+div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 35%;
+}
+button {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.form-control {
+    border: 1px solid blue;
+}

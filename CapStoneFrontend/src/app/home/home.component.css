@@ -1,0 +1,10 @@
+h3 {
+    font-style: italic;
+    text-align:center;
+    font-weight: 300px;
+    color: blue;
+    margin-top: 10px;
+}
+img {
+    max-width: 68%;
+}

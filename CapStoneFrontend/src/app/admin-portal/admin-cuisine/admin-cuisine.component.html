@@ -1,0 +1,32 @@
+  <table class="table table-sm">
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>Cuisine Name</th>
+          <th>Remove Cuisine</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cuisine of cuisines" (click)="rowSelected(cuisine);">
+        <td>{{ cuisine.id }}</td>
+        <td>{{ cuisine.cName }}</td>
+        <td><button type="button" class="btn btn-danger" (click)="delete()">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+<h3>Add Cuisine</h3>
+<form  novalidate (ngSubmit)="addCuisine(form.value)" #form="ngForm">
+    <div class="form-group">
+        <label>Cuisine</label>
+        <input type="text" class="form-control" name="cName" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary"
+            [disabled]="!form.valid" (click)="success()">Add</button>
+</form>
+
+<form  novalidate (ngSubmit)="getCuisines()" #form="ngForm">
+    <button type="submit" class="btn btn-warning">Load Cuisines</button>
+</form>
+
+

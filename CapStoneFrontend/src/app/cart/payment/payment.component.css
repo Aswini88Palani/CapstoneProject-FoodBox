@@ -1,0 +1,19 @@
+h1, h4, h5, a {
+    text-align: center;
+    margin-top: 2%;
+}
+h1 {
+    font-family: cursive;
+    color: blue;
+}
+h5 {
+    color:darkviolet;
+}
+h4 {
+    color:fuchsia;
+}
+img {
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 2%;
+}

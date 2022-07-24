@@ -1,0 +1,19 @@
+h3 {
+    font-family: cursive;
+    color:blue;
+    margin-top: 10px;
+    text-align: center;
+}
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+table {
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
+div {
+    width: 70%;
+}
+

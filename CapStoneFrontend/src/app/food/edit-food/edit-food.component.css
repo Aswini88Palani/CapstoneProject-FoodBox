@@ -1,0 +1,16 @@
+div {
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 30%;
+}
+h1, button {
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+.form-control {
+    border: 1px solid blue;
+}
+h1 {
+    color:blue;
+}

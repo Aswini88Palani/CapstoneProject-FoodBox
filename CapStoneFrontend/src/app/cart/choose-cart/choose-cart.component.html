@@ -1,0 +1,37 @@
+<form  novalidate (ngSubmit)="getEnabledFood()" #form="ngForm">
+    <button type="submit" class="btn btn-success">Show List</button>
+</form>
+<form  novalidate (ngSubmit)="showCart()" #form="ngForm">
+    <button type="submit" class="btn btn-primary">View Cart</button>
+</form>
+
+<div class="container">
+<div class="form-group">
+  <input type="text" class="form-control search-field" placeholder="Search Here" [(ngModel)]="searchText">
+</div>
+<h3>List of FoodItems</h3> 
+    <table class="table table-sm" data-show-toggle="false" data-expand-first="true">
+      <thead>
+          <tr>
+            <th style="display: none;">Id</th>
+            <th>FoodName</th>
+            <th>Cuisine</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+            <th style="display: none;">Enabled</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let food of foods | searchFilter: searchText">
+          <td style="display: none;">{{ food.id }}</td>
+          <td>{{ food.foodName }}</td>
+          <td>{{ food.cuisine }}</td>
+          <td>{{ food.description}}</td>
+          <td>{{ food.price }}</td>
+          <td style="display: none;">{{ food.enabled}}</td>
+          <td><a class="nav-link" routerLink="ShowCart/:cart" (click)="rowSelected(food)"><button type="submit" class="btn btn-success" (click)="success()">Add to Cart</button></a></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

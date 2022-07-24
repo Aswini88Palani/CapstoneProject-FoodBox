@@ -1,0 +1,15 @@
+h2 {
+    color: blue;
+    margin-top: 1%;
+    font-family: cursive;
+}
+div {
+    width: 70%;
+}
+table {
+    color:white;
+    text-align: center;
+}
+form, ul {
+    margin-left: 2%;
+}
